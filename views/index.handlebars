@@ -1,0 +1,66 @@
+<h1>Eat the burger!
+    <img id="logo" src='http://mwwint.com/illustrations/largeburger.png'> 
+</h1>
+
+
+
+<h2>*Click on the devour button to eat!</h2>
+
+
+
+
+<ul class="uneaten">
+ <h3>Burgers ready to eat!</h3>
+  {{#each burger}}
+    {{#unless this.eaten}}
+      <li>
+        {{this.name}}
+
+        <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="eaten" value="true">
+          <button class="btn-primary action-primary" type="submit">DEVOUR!</button>
+        </form>
+
+         <form action="burgers/delete/{{this.id}}?_method=DELETE" method="POST">
+            <button class="btn-primary action-secondary" id = "delete" type="submit"> Delete </button> 
+        </form> 
+
+          
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+
+
+<ul class="eaten">
+ 
+ <h3>Burgers Devoured</h3>
+  {{#each burger}}
+    {{#if this.eaten}}
+      <li>
+        {{this.name}}
+
+        <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="eaten" value="false">
+          <button class="btn-primary action-primary" type="submit">THORW UP!</button>
+        </form>
+
+        <form action="burgers/delete/{{this.id}}?_method=DELETE" method="POST">
+            <button class="btn-primary action-secondary" id = "delete" type="submit"> Delete </button> 
+        </form> 
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<form class="create-burger" action="burgers/create" method="POST">  
+  <h3>Add a Burger</h3>
+
+  <div class="form-group">
+    <label for="enter-burger">Burger Name:</label>
+    <input id="enter-burger" type="text"  name="name">
+  </div><br>
+
+  <button class="btn-primary" type="submit">Add Burger</button>
+</form>

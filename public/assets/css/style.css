@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Six+Caps|Bangers');
+
+body{
+	font-family: 'Bangers', cursive;
+    background-color:#ffff4d;
+    color:#1a1a1a; 
+    
+    
+}
+
+li {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/736x/b8/61/d1/b861d1f6fd8038e690c02d20f856a57d.jpg'); 
+  background-size:contain;
+  border:1px solid transparent; 
+  border-radius: 55px; 
+  width:35%; 
+  margin:10px auto ; 
+  padding: 5px; 
+  list-style: none; 
+  text-align: center;
+  color:#fff; 
+  text-shadow: 1px 1px #000; 
+  
+}
+
+h1{
+    margin:0 auto; 
+    text-align: center; 
+}
+
+h2{
+    margin:0 auto; 
+    text-align: center; 
+    color:crimson; 
+    font-size:1.2em;
+}
+
+h3{
+    color:#000; 
+    text-shadow:1px 3px #fff ; 
+    
+    
+}
+#logo{
+    height:75px; 
+    width:75px;
+}
+
+.btn-primary{
+    padding:6px; 
+    background-color:#eee; 
+    border: 1px solid #000 ; 
+    border-radius:75%; 
+    font-family: 'Covered By Your Grace', cursive;
+    font-size:1.2em;
+    font-weight:bold;
+    color:#333;   
+    
+}
+
+.action-primary{
+     color:crimson; 
+}
+
+.action-secondary{
+    color:#4d2800
+}
+.eaten{
+    padding:10px;
+    width:45%; 
+    float: left;
+    text-align: center; 
+    margin:0 auto;
+}
+
+.uneaten{
+    padding:10px; 
+    background-image: url('http://publicdomainvectors.org/tn_img/1360339942.png'); 
+    background-size:cover; 
+    background-repeat: no-repeat;
+    width:45%; 
+    float:left;
+    text-align: center;
+    margin:0 auto;
+    
+}
+
+
+.label {
+  font-weight: bold;
+}
+
+.create-burger {
+  clear:both ; 
+  
+  margin: 0 30%; 
+  text-align:center; 
+  padding: 15px;
+  width:30%;
+  font-size:1.2em ;
+  border-radius:50%;
+}
+
+#enter-burger{
+    font-size:1.2em; 
+    font-family: 'Covered By Your Grace', cursive; 
+    outline:none; 
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
